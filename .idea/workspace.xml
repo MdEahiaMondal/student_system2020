@@ -160,18 +160,38 @@
       <updated>1579226919853</updated>
       <workItem from="1579226922161" duration="2187000" />
       <workItem from="1579354295763" duration="611000" />
-      <workItem from="1583074703857" duration="6327000" />
+      <workItem from="1583074703857" duration="6589000" />
     </task>
+    <task id="LOCAL-00001" summary="migration all table">
+      <created>1583082790486</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583082790486</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="migration all table" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration all table" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1583082789202">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1583082789202" />
     <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1579355020980">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1579355020980" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1583082792042">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1583082792042" />
     <state x="456" y="195" width="672" height="677" key="run.anything.popup" timestamp="1583082734244">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
