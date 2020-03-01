@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="607961bc-1c56-48d8-a3b2-8d819f8b1eca" name="Default Changelist" comment="" />
+    <list default="true" id="607961bc-1c56-48d8-a3b2-8d819f8b1eca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +110,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1WVFaZesRdZITpqduYmk8UdaQNa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -157,7 +160,7 @@
       <updated>1579226919853</updated>
       <workItem from="1579226922161" duration="2187000" />
       <workItem from="1579354295763" duration="611000" />
-      <workItem from="1583074703857" duration="3057000" />
+      <workItem from="1583074703857" duration="6327000" />
     </task>
     <servers />
   </component>
@@ -169,5 +172,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1579355020980" />
+    <state x="456" y="195" width="672" height="677" key="run.anything.popup" timestamp="1583082734244">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" width="672" height="677" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1583082734244" />
   </component>
 </project>
