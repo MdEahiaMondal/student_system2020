@@ -29,11 +29,50 @@
                 </div>
             </li>
             <li>
-                <a href="{{ route('admin.home') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                <a href="{{ route('admin.admin.home') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
             </li>
 
             <li>
-                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Products</span></a>
+                <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">General </span><span class="label label-warning pull-right">10</span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{{ route('admin.classe.index') }}">Classe</a></li>
+                    <li><a href="mailbox.html">Class Room</a></li>
+                    <li><a href="mailbox.html">Levels</a></li>
+                    <li><a href="mailbox.html">Batches</a></li>
+                    <li><a href="mailbox.html">Shifts</a></li>
+                    <li><a href="mailbox.html">Courses</a></li>
+                    <li><a href="mailbox.html">Faculities</a></li>
+                    <li><a href="mailbox.html">Times</a></li>
+                    <li><a href="mailbox.html">Academics</a></li>
+                    <li><a href="mailbox.html">Days</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Schedul </span><span class="label label-warning pull-right">2</span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="mailbox.html">Class Assignings</a></li>
+                    <li><a href="mailbox.html">Class Schedulings</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Admissions</span></a>
+            </li>
+
+            <li>
+                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Teachesrs</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Attendances</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Roles</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Users</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Transactions</span></a>
             </li>
 
         </ul>

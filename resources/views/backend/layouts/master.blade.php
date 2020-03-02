@@ -84,12 +84,12 @@
             timeOut: 2500
         };
 
-        @if(session('successTMsg'))
-            toastr.success('{{ session('successTMsg') }}');
+        @if(session('success'))
+            toastr.success('{{ session('success') }}');
         @endif
 
-        @if(session('errorTMsg'))
-            toastr.error('{{ session('errorTMsg') }}');
+        @if(session('error'))
+            toastr.error('{{ session('error') }}');
         @endif
     });
 

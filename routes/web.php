@@ -20,4 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/admin', 'Backend\AdminController@index')->name('admin.home')->middleware('auth');
+
+Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Backend', 'middleware' => ['auth']], function (){
+
+    Route::get('/', 'AdminController@index')->name('admin.home')->middleware('auth');
+    Route::resource('classe', 'ClasseController');
+
+});
