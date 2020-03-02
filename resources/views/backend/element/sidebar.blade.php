@@ -40,7 +40,7 @@
                     <li><a href="mailbox.html">Levels</a></li>
                     <li><a href="mailbox.html">Batches</a></li>
                     <li><a href="mailbox.html">Shifts</a></li>
-                    <li><a href="mailbox.html">Courses</a></li>
+                    <li><a href="{{ route('admin.course.index') }}">Courses</a></li>
                     <li><a href="mailbox.html">Faculities</a></li>
                     <li><a href="mailbox.html">Times</a></li>
                     <li><a href="mailbox.html">Academics</a></li>
