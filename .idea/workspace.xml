@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607961bc-1c56-48d8-a3b2-8d819f8b1eca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/classes/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/classes/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/classes/element.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/classes/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/roles/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/roles/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/roles/element.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/roles/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Classe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClasseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ClasseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/element/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/element/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +129,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/classes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -140,11 +139,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend" />
+      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend\classes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\app\Http\Controllers\Backend" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend\classes" />
     </key>
   </component>
   <component name="RunManager">
@@ -178,7 +178,8 @@
       <workItem from="1579226922161" duration="2187000" />
       <workItem from="1579354295763" duration="611000" />
       <workItem from="1583074703857" duration="7249000" />
-      <workItem from="1583111005092" duration="2830000" />
+      <workItem from="1583111005092" duration="3099000" />
+      <workItem from="1583157087339" duration="1409000" />
     </task>
     <task id="LOCAL-00001" summary="migration all table">
       <created>1583082790486</created>
@@ -187,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583082790486</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="make a admin panel show, and class crude">
+      <created>1583114608057</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583114608057</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,21 +203,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="migration all table" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration all table" />
+    <MESSAGE value="make a admin panel show, and class crude" />
+    <option name="LAST_COMMIT_MESSAGE" value="make a admin panel show, and class crude" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1583082789202">
+    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1583114604600">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1583082789202" />
+    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1583114604600" />
     <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1579355020980">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1579355020980" />
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1583082792042">
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1583114609838">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1583082792042" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1583114609838" />
     <state x="456" y="195" width="672" height="677" key="run.anything.popup" timestamp="1583082734244">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

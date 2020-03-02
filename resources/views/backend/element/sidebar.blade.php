@@ -66,7 +66,7 @@
                 <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Attendances</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Roles</span></a>
+                <a href="{{ route('admin.role.index') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Roles</span></a>
             </li>
             <li>
                 <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Users</span></a>

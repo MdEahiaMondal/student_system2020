@@ -25,5 +25,6 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Backend', '
 
     Route::get('/', 'AdminController@index')->name('admin.home')->middleware('auth');
     Route::resource('classe', 'ClasseController');
+    Route::resource('role', 'RoleController');
 
 });
