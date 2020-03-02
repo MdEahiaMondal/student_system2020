@@ -27,5 +27,6 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Backend', '
     Route::resource('classe', 'ClasseController');
     Route::resource('role', 'RoleController');
     Route::resource('course', 'CourseController');
+    Route::resource('batch', 'BatchController');
 
 });

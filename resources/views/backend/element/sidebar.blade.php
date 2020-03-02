@@ -38,7 +38,7 @@
                     <li><a href="{{ route('admin.classe.index') }}">Classe</a></li>
                     <li><a href="mailbox.html">Class Room</a></li>
                     <li><a href="mailbox.html">Levels</a></li>
-                    <li><a href="mailbox.html">Batches</a></li>
+                    <li><a href="{{ route('admin.batch.index') }}">Batches</a></li>
                     <li><a href="mailbox.html">Shifts</a></li>
                     <li><a href="{{ route('admin.course.index') }}">Courses</a></li>
                     <li><a href="mailbox.html">Faculities</a></li>
