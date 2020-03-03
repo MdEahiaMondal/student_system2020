@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607961bc-1c56-48d8-a3b2-8d819f8b1eca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/batches/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/batches/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/batches/element.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/batches/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/days/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/days/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/days/element.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/days/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Batch.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Batch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BatchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/BatchController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_01_162932_create_batches_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_162932_create_batches_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Day.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Day.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/DayController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/element/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/element/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -140,12 +139,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\app\Http\Controllers\Backend" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend" />
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend\classes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\app\Http\Controllers\Backend" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,7 +179,8 @@
       <workItem from="1579354295763" duration="611000" />
       <workItem from="1583074703857" duration="7249000" />
       <workItem from="1583111005092" duration="3099000" />
-      <workItem from="1583157087339" duration="4777000" />
+      <workItem from="1583157087339" duration="5595000" />
+      <workItem from="1583244383119" duration="1761000" />
     </task>
     <task id="LOCAL-00001" summary="migration all table">
       <created>1583082790486</created>
@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583167501566</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="batch crude done">
+      <created>1583168321655</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583168321655</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,21 +228,26 @@
     <MESSAGE value="make a admin panel show, and class crude" />
     <MESSAGE value="role crude done" />
     <MESSAGE value="course crude done" />
-    <option name="LAST_COMMIT_MESSAGE" value="course crude done" />
+    <MESSAGE value="batch crude done" />
+    <option name="LAST_COMMIT_MESSAGE" value="batch crude done" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1583167499297">
+    <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583245779390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1583167499297" />
+    <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1583245779390" />
+    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1583168318663">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1583168318663" />
     <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1579355020980">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1579355020980" />
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1583167502953">
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1583168322975">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1583167502953" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1583168322975" />
     <state x="456" y="195" width="672" height="677" key="run.anything.popup" timestamp="1583082734244">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
