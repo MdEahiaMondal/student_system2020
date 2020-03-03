@@ -36,7 +36,7 @@
                 <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">General </span><span class="label label-warning pull-right">10</span></a>
                 <ul class="nav nav-second-level collapse">
                     <li><a href="{{ route('admin.classe.index') }}">Classe</a></li>
-                    <li><a href="mailbox.html">Class Room</a></li>
+                    <li><a href="{{ route('admin.class_room.index') }}">Class Room</a></li>
                     <li><a href="mailbox.html">Levels</a></li>
                     <li><a href="{{ route('admin.batch.index') }}">Batches</a></li>
                     <li><a href="mailbox.html">Shifts</a></li>
