@@ -45,6 +45,7 @@
                     <li><a href="mailbox.html">Times</a></li>
                     <li><a href="{{ route('admin.academic.index') }}">Academics</a></li>
                     <li><a href="{{ route('admin.day.index') }}">Days</a></li>
+                    <li><a href="{{ route('admin.semester.index') }}">Semisters</a></li>
                 </ul>
             </li>
             <li>
