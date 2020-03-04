@@ -32,5 +32,9 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Backend', '
     Route::resource('class_room', 'ClassRoomController');
     Route::resource('academic', 'AcademicController');
     Route::resource('semester', 'SemesterController');
+    Route::resource('level', 'LevelController');
+    Route::resource('time', 'TimeController');
+    Route::resource('shift', 'ShiftController');
+    Route::resource('class_scheduling', 'ClassSchedulingController');
 
 });

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class ClassScheduling extends Model
 {
-    //
+    protected  $guarded = [];
 }

@@ -19,7 +19,7 @@
  <div class="form-group">
     <label class="col-lg-2 control-label">Duration<span class="required-star"> *</span></label>
     <div class="col-lg-6">
-        <input type="date" value="{{ isset($semester->duration) ? $semester->duration : old('duration')}}" name="duration" class="form-control">
+        <input type="text" value="{{ isset($semester->duration) ? $semester->duration : old('duration')}}" name="duration" class="form-control">
         @error('duration') <span class="help-block m-b-none text-danger">{{ $message }}</span> @enderror
     </div>
 </div>

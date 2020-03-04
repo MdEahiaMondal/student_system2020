@@ -2,10 +2,10 @@
 @section('content')
     <div class="row wrapper border-bottom white-bg page-heading">
         <div class="col-lg-8">
-            <h2>Edit Day</h2>
+            <h2>Edit Level</h2>
             <ol class="breadcrumb">
                 <li>
-                    <a href="{{ route('admin.day.index') }}">Day</a>
+                    <a href="{{ route('admin.level.index') }}">Level</a>
                 </li>
                 <li class="active">
                     <strong>Edit</strong>
@@ -19,11 +19,11 @@
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-content">
-                        <form class="form-horizontal" method="POST" action="{{ route('admin.day.update', $day->id ) }}">
+                        <form class="form-horizontal" method="POST" action="{{ route('admin.level.update', $level->id ) }}">
                            @csrf
                            @method('PUT')
 
-                           @include('backend.days.element')
+                           @include('backend.levels.element')
 
                             <div class="form-group">
                                 <div class="col-lg-2"></div>

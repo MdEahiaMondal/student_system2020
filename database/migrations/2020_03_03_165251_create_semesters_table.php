@@ -17,7 +17,7 @@ class CreateSemestersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('code')->unique();
-            $table->date('duration');
+            $table->string('duration');
             $table->text('description');
             $table->timestamps();
         });

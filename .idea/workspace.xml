@@ -2,11 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607961bc-1c56-48d8-a3b2-8d819f8b1eca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/semesters/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/semesters/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/semesters/element.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/semesters/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/class_schedulings/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/class_schedulings/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/class_schedulings/element.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/class_schedulings/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/levels/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/levels/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/levels/element.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/levels/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/shifts/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/shifts/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/shifts/element.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/shifts/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/times/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/times/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/times/element.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/times/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ClassScheduling.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ClassScheduling.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassSchedulingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ClassSchedulingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/LevelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShiftController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ShiftController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TimeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/TimeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Level.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Level.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Time.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Time.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_01_163500_create_class_schedulings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_163500_create_class_schedulings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_03_165251_create_semesters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_03_165251_create_semesters_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/days/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/days/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/element/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/element/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/semesters/element.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/semesters/element.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,12 +161,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\app\Http\Controllers\Backend" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend" />
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend\classes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\app\Http\Controllers\Backend" />
     </key>
   </component>
   <component name="RunManager">
@@ -177,7 +202,8 @@
       <workItem from="1583074703857" duration="7249000" />
       <workItem from="1583111005092" duration="3099000" />
       <workItem from="1583157087339" duration="5595000" />
-      <workItem from="1583244383119" duration="6164000" />
+      <workItem from="1583244383119" duration="7032000" />
+      <workItem from="1583330863963" duration="7796000" />
     </task>
     <task id="LOCAL-00001" summary="migration all table">
       <created>1583082790486</created>
@@ -235,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583254101050</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Semester crude done">
+      <created>1583255909431</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583255909431</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,25 +283,26 @@
     <MESSAGE value="day crude done" />
     <MESSAGE value="class_rooms crude done" />
     <MESSAGE value="academic crude done" />
-    <option name="LAST_COMMIT_MESSAGE" value="academic crude done" />
+    <MESSAGE value="Semester crude done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Semester crude done" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583245779390">
+    <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583341052247">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1583245779390" />
-    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1583254098089">
+    <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1583341052247" />
+    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1583255907526">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1583254098089" />
+    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1583255907526" />
     <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1579355020980">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1579355020980" />
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1583254104572">
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1583255910770">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1583254104572" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1583255910770" />
     <state x="456" y="195" width="672" height="677" key="run.anything.popup" timestamp="1583082734244">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
