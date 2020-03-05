@@ -141,3 +141,42 @@
     </div>
 </div>
 
+{{--{{ dd($mamun) }}--}}
+
+@push('script')
+    <script>
+        $().ready(function () {
+
+            // old value catch
+            @if(old('course_id') > 0)
+            $("#course_id").val("{!! old('course_id') !!}");
+            $("#course_id").trigger('change'); // autometic run
+            updateDynamicField($("#course_id"));
+            @endif
+
+            $("#course_id").change(function () {
+                var course_id = $(this).val();
+                if(course_id) {
+                    updateDynamicField(this);
+                }
+            });
+
+            function updateDynamicField(element)
+                {
+                    if ($(element).val() !== ''){
+                        var course_id = $(element).val();
+                        $.get("{{ route('admin.dynamiclevel') }}", { course_id: course_id }, function (res) {
+                            if (res.level)
+                            {
+                                $("#level_id").html(res.level);
+                            }
+                            if (res.false)
+                            {
+                                toastr.error('Not Found');
+                            }
+                        });
+                    }
+                }
+        });
+    </script>
+@endpush

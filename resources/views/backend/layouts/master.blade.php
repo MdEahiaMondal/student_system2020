@@ -65,6 +65,8 @@
 {{--Sweetalert--}}
 <script src="{{ asset('backend/js/plugins/sweetalert/sweetalert.min.js') }}"></script>
 
+@stack('css')
+
 <script>
 
     $(document).ready(function () {
@@ -111,6 +113,8 @@
     }
 
 </script>
+
+@stack('script')
 
 </body>
 </html>

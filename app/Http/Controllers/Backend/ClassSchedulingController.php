@@ -115,4 +115,23 @@ class ClassSchedulingController extends Controller
        $classScheduling->delete();
         return redirect()->back()->with('success', 'Class Shedulinh deleted success !');
     }
+
+
+
+    public function dynamicLevel(Request $request)
+    {
+        $levels = Level::where('course_id' ,$request->course_id)->get();
+        if ($levels)
+        {
+            $output = "<option selected value=''>Select Level</option>";
+            foreach ($levels as $level)
+            {
+                $output .= "<option value='$level->id'>$level->level</option>";
+            }
+            return response()->json(['level' => $output]);
+        }else{
+            return response()->json('false');
+        }
+    }
+
 }

@@ -1,5 +1,6 @@
 @extends('backend.layouts.master')
 @section('content')
+
     <div class="row wrapper border-bottom white-bg page-heading">
         <div class="col-lg-8">
             <h2>Edit Class Scheduling</h2>
@@ -22,9 +23,7 @@
                         <form class="form-horizontal" method="POST" action="{{ route('admin.class_scheduling.update', $classScheduling->id ) }}">
                            @csrf
                            @method('PUT')
-
-                           @include('backend.class_schedulings.element')
-
+                           @include('backend.class_schedulings.element'/* ,['mamun' => 'Abdullah al mamun']*/)
                             <div class="form-group">
                                 <div class="col-lg-2"></div>
                                 <div class="col-lg-10">
