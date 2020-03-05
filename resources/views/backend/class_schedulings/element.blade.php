@@ -83,7 +83,7 @@
         <select name="day_id" id="day_id" class="form-control">
             <option selected value="">Select </option>
             @foreach($days as $day)
-                <option {{ (isset($classScheduling->day_id) AND $classScheduling->day_id == $day->id) ? 'selected':'' }} value="{{ $day->id }}">{{ $day->day }}</option>
+                <option {{ (isset($classScheduling->day_id) AND $classScheduling->day_id == $day->id) ? 'selected':'' }} value="{{ $day->id }}">{{ $day->name }}</option>
             @endforeach
         </select>
         @error('day_id') <span class="help-block m-b-none text-danger">{{ $message }}</span> @enderror

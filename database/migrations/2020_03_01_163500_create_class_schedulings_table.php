@@ -24,8 +24,8 @@ class CreateClassSchedulingsTable extends Migration
             $table->unsignedBigInteger('day_id');
             $table->unsignedBigInteger('time_id');
             $table->unsignedBigInteger('semester_id');
-            $table->time('start_time');
-            $table->time('end_time');
+            $table->date('start_time');
+            $table->date('end_time');
             $table->tinyInteger('status')->default(1);
             $table->softDeletes();
             $table->timestamps();

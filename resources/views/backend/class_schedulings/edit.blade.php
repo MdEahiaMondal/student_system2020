@@ -2,10 +2,10 @@
 @section('content')
     <div class="row wrapper border-bottom white-bg page-heading">
         <div class="col-lg-8">
-            <h2>Edit Examination</h2>
+            <h2>Edit Class Scheduling</h2>
             <ol class="breadcrumb">
                 <li>
-                    <a href="{{ route('examinations.index') }}">Examinations</a>
+                    <a href="{{ route('admin.class_scheduling.index') }}">Class Scheduling</a>
                 </li>
                 <li class="active">
                     <strong>Edit</strong>
@@ -19,11 +19,11 @@
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-content">
-                        <form class="form-horizontal" method="POST" action="{{ route('examinations.update', $examination->id ) }}">
+                        <form class="form-horizontal" method="POST" action="{{ route('admin.class_scheduling.update', $classScheduling->id ) }}">
                            @csrf
                            @method('PUT')
 
-                           @include('backend.examination.element')
+                           @include('backend.class_schedulings.element')
 
                             <div class="form-group">
                                 <div class="col-lg-2"></div>

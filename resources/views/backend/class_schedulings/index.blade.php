@@ -59,7 +59,7 @@
                                         <th>Batch </th>
                                         <th>Day</th>
                                         <th>Time</th>
-                                        <th>Teacher</th>
+                                        <th>Semester</th>
                                         <th>Start Time</th>
                                         <th>End Time</th>
                                         <th>Status</th>
@@ -71,6 +71,24 @@
                                     @foreach($class_schedulings as $class_scheduling)
                                         <tr>
                                             <td>{{ $loop->index + 1 }}</td>
+                                            <td>{{ $class_scheduling->course->course_name }}</td>
+                                            <td>{{ $class_scheduling->level->level }}</td>
+                                            <td>{{ $class_scheduling->shift->shift }}</td>
+                                            <td>{{ $class_scheduling->classRoom->classroom_name }}</td>
+                                            <td>{{ $class_scheduling->batch->batch }}</td>
+                                            <td>{{ $class_scheduling->day->name }}</td>
+                                            <td>{{ $class_scheduling->time->time }}</td>
+                                            <td>{{ $class_scheduling->semester->name }}</td>
+                                            <td>{{ $class_scheduling->start_time }}</td>
+                                            <td>{{ $class_scheduling->end_time }}</td>
+                                            <td>
+                                                @if($class_scheduling->status == 1)
+                                                    <span class="badge badge-primary">Active</span>
+                                                    @else
+                                                    <span class="badge badge-danger">In-Active</span>
+                                                @endif
+
+                                            </td>
                                             <td class="text-center">
                                                 <a href="{{ route('admin.class_scheduling.edit', $class_scheduling->id) }}" title="Edit" class="btn btn-info cus_btn">
                                                     <i class="fa fa-pencil-square-o"></i> <strong>Edit</strong>
