@@ -76,7 +76,7 @@ class ClassSchedulingController extends Controller
     {
         $classes = Classe::all();
         $courses = Course::all();
-        $levels = Level::all();
+        $levels = Level::where('course_id', $classScheduling->course->id)->get();
         $shifts = Shift::all();
         $classrooms = ClassRoom::all();
         $batches = Batch::all();
