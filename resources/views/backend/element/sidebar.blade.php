@@ -61,7 +61,7 @@
             </li>
 
             <li>
-                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Teachesrs</span></a>
+                <a href="{{ route('admin.teacher.index') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Teachesrs</span></a>
             </li>
             <li>
                 <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Attendances</span></a>
