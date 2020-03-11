@@ -54,6 +54,13 @@
                     <li><a href="{{ route('admin.class_scheduling.index') }}">Class Schedulings</a></li>
                 </ul>
             </li>
+            <li>
+                <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Faculty </span><span class="label label-warning pull-right">2</span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{{ route('admin.faculty.index') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Faculities</span></a></li>
+                    <li><a href="{{ route('admin.department.index') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Departments</span></a></li>
+                </ul>
+            </li>
 
             <li>
                 <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Admissions</span></a>
@@ -73,7 +80,6 @@
             </li>
             <li>
                 <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Transactions</span></a>
-                <a href="{{ route('admin.faculty.index') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Faculities</span></a>
             </li>
 
         </ul>
