@@ -39,4 +39,5 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Backend', '
     Route::get('course-wise-level', 'ClassSchedulingController@dynamicLevel')->name('dynamiclevel');
 
     Route::resource('teacher', 'TeacherController');
+    Route::resource('faculty', 'FacultyController');
 });

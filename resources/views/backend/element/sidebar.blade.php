@@ -45,7 +45,6 @@
                     <li><a href="{{ route('admin.academic.index') }}">Academics</a></li>
                     <li><a href="{{ route('admin.day.index') }}">Days</a></li>
                     <li><a href="{{ route('admin.semester.index') }}">Semisters</a></li>
-                    <li><a href="mailbox.html">Faculities</a></li>
                 </ul>
             </li>
             <li>
@@ -74,6 +73,7 @@
             </li>
             <li>
                 <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Transactions</span></a>
+                <a href="{{ route('admin.faculty.index') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Faculities</span></a>
             </li>
 
         </ul>
