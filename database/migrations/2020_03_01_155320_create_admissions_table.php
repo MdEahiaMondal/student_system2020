@@ -13,10 +13,8 @@ class CreateAdmissionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('admissions', function (Blueprint $table) {
+        Schema::create('admissions', function (Blueprint $table) { // it is a student admission table
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('student_id');
-            $table->string('role_no');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('father_name');
@@ -33,7 +31,9 @@ class CreateAdmissionsTable extends Migration
             $table->tinyInteger('status');
             $table->date('dateregistered');
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('class_id');
+            $table->unsignedBigInteger('department_id');
+            $table->unsignedBigInteger('faculty_id');
+            $table->unsignedBigInteger('batch_id');
             $table->string('image')->nullable();
             $table->softDeletes();
             $table->timestamps();

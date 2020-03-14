@@ -1,30 +1,30 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
 use App\admission;
+use App\Batch;
+use App\Department;
+use App\Faculty;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class AdmissionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+        $admissions = Admission::all();
+        return view('backend.admissions.index', compact('admissions'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
-        //
+        $faculties = Faculty::all();
+        $departments = Department::all();
+        $batches = Batch::all();
+       return view('backend.admissions.create', compact('faculties', 'departments', 'batches'));
     }
 
     /**

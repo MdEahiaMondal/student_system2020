@@ -63,7 +63,7 @@
             </li>
 
             <li>
-                <a href="#0"><i class="fa fa-th-large"></i> <span class="nav-label">Admissions</span></a>
+                <a href="{{ route('admin.admission.index') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Admissions</span></a>
             </li>
 
             <li>
