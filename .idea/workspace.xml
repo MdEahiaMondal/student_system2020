@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607961bc-1c56-48d8-a3b2-8d819f8b1eca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/students/account.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/students/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdmissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdmissionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/admissions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/admissions/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/admissions/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/admissions/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/admissions/element.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/admissions/element.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +18,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Blade" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +136,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/students" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -141,15 +146,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend" />
-      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\app\Http\Controllers\Backend" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend\students" />
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views" />
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend" />
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend\teachers" />
       <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend\classes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\resources\views\backend" />
+      <recent name="F:\xampp\htdocs\SunTech\student_system_2020\app\Http\Controllers\Backend" />
     </key>
   </component>
   <component name="RunManager">
@@ -193,7 +199,7 @@
       <workItem from="1583920520019" duration="5297000" />
       <workItem from="1583948970470" duration="683000" />
       <workItem from="1584195907311" duration="6801000" />
-      <workItem from="1584281073910" duration="5140000" />
+      <workItem from="1584281073910" duration="7502000" />
     </task>
     <task id="LOCAL-00001" summary="migration all table">
       <created>1583082790486</created>
@@ -321,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584206106754</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="admission part two">
+      <created>1584291335126</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1584291335126</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,25 +359,26 @@
     <MESSAGE value="faculty crude done" />
     <MESSAGE value="department crude done" />
     <MESSAGE value="admission part one" />
-    <option name="LAST_COMMIT_MESSAGE" value="admission part one" />
+    <MESSAGE value="admission part two" />
+    <option name="LAST_COMMIT_MESSAGE" value="admission part two" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584283575144">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1584283575144" />
-    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1584206103188">
+    <state x="425" y="23" key="CommitChangelistDialog2" timestamp="1584291331242">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584206103188" />
+    <state x="425" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584291331242" />
     <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1583949811326">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1583949811326" />
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1584206110047">
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1584291357695">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584206110047" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584291357695" />
     <state x="456" y="195" width="672" height="677" key="run.anything.popup" timestamp="1583082734244">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

@@ -44,3 +44,13 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Backend', '
     Route::resource('admission', 'AdmissionController');
     Route::get('admission/faculity/dynamic', 'AdmissionController@dynamicFaculity')->name('dynamicFaculity');
 });
+
+
+Route::get('student', 'Student\StudentController@showLoginPage');
+Route::post('student/login', 'Student\StudentController@studentLogin')->name('student.login');
+
+Route::group(['as' => 'student.', 'prefix' => 'student', 'namespace' => 'Student', 'middleware' => ['student']], function (){
+    Route::get('account', 'StudentController@studentAccount')->name('account');
+});
+
+
