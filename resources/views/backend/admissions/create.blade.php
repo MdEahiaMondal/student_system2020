@@ -19,7 +19,7 @@
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-content">
-                        <form class="form-horizontal" method="POST" action="{{ route('admin.admission.store') }}">
+                        <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ route('admin.admission.store') }}">
                            @csrf
 
                            @include('backend.admissions.element')

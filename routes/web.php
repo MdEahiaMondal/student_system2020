@@ -42,4 +42,5 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Backend', '
     Route::resource('faculty', 'FacultyController');
     Route::resource('department', 'DepartmentController');
     Route::resource('admission', 'AdmissionController');
+    Route::get('admission/faculity/dynamic', 'AdmissionController@dynamicFaculity')->name('dynamicFaculity');
 });

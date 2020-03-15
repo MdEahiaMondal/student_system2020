@@ -1,3 +1,4 @@
+@if(Session::get('create'))
 <div class="form-group">
     <label class="col-lg-2 control-label">UserName<span class="required-star"> *</span></label>
     <div class="col-lg-6">
@@ -13,7 +14,7 @@
         @error('password') <span class="help-block m-b-none text-danger">{{ $message }}</span> @enderror
     </div>
 </div>
-
+@endif
 
 <div class="form-group">
     <label class="col-lg-2 control-label">Faculty<span class="required-star"> *</span></label>
@@ -137,13 +138,6 @@
      </div>
  </div>
 
- <div class="form-group">
-     <label class="col-lg-2 control-label">Date Registered<span class="required-star"> *</span></label>
-     <div class="col-lg-6">
-         <input type="date" value="{{ isset($admission->dateregistered) ? $admission->dateregistered : old('dateregistered')}}" name="dateregistered" class="form-control">
-         @error('dateregistered') <span class="help-block m-b-none text-danger">{{ $message }}</span> @enderror
-     </div>
- </div>
 
  <div class="form-group">
      <label class="col-lg-2 control-label">Gender<span class="required-star"> *</span></label>
@@ -190,3 +184,41 @@
          @error('status') <span class="help-block m-b-none text-danger">{{ $message }}</span> @enderror
      </div>
  </div>
+
+@push('script')
+    <script>
+        $().ready(function () {
+
+            // old value catch
+            @if(old('faculty_id') > 0)
+            $("#faculty_id").val("{!! old('faculty_id') !!}");
+            $("#faculty_id").trigger('change'); // autometic run
+            updateDynamicField($("#faculty_id"));
+            @endif
+
+            $("#faculty_id").change(function () {
+                var faculty_id = $(this).val();
+                if(faculty_id) {
+                    updateDynamicField(this);
+                }
+            });
+
+            function updateDynamicField(element)
+            {
+                if ($(element).val() !== ''){
+                    var faculty_id = $(element).val();
+                    $.get("{{ route('admin.dynamicFaculity') }}", { faculty_id: faculty_id }, function (res) {
+                        if (res.department)
+                        {
+                            $("#department_id").html(res.department);
+                        }
+                        if (res.false)
+                        {
+                            toastr.error('Not Found');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+@endpush
