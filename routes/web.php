@@ -50,7 +50,8 @@ Route::get('student', 'Student\StudentController@showLoginPage');
 Route::post('student/login', 'Student\StudentController@studentLogin')->name('student.login');
 
 Route::group(['as' => 'student.', 'prefix' => 'student', 'namespace' => 'Student', 'middleware' => ['student']], function (){
-    Route::get('account', 'StudentController@studentAccount')->name('account');
+    Route::get('dashboard', 'StudentController@index')->name('dashboard');
+    Route::get('profile', 'StudentController@profile')->name('profile');
 });
 
 
