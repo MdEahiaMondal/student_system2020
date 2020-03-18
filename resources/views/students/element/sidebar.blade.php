@@ -38,6 +38,15 @@
                     <li><a href="{{ route('student.profile') }}">Biodata</a></li>
                 </ul>
             </li>
+            <li class="{{ Request::is('student/profile') ? 'active' : '' }}">
+                <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Lectures </span><span class="label label-warning pull-right"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{{ route('student.profile') }}">Choose Course</a></li>
+                    <li><a href="{{ route('student.profile') }}">Academic Calender</a></li>
+                    <li><a href="{{ route('student.profile') }}">Semester Activity</a></li>
+                    <li><a href="{{ route('student.profile') }}">Exam Marks</a></li>
+                </ul>
+            </li>
 
         </ul>
     </div>

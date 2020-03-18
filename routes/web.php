@@ -52,6 +52,10 @@ Route::post('student/login', 'Student\StudentController@studentLogin')->name('st
 Route::group(['as' => 'student.', 'prefix' => 'student', 'namespace' => 'Student', 'middleware' => ['student']], function (){
     Route::get('dashboard', 'StudentController@index')->name('dashboard');
     Route::get('profile', 'StudentController@profile')->name('profile');
+    Route::get('choose-course', 'StudentController@chooseCourse')->name('choose.course');
+    Route::get('lecture-calender', 'StudentController@lectureCalender')->name('lecture.calender');
+    Route::get('lecture-activity', 'StudentController@lectureActivity')->name('lecture.activity');
+    Route::get('exam-marks', 'StudentController@examMark')->name('exma.mark');
 });
 
 
